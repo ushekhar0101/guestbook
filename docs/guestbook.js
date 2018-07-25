@@ -4,13 +4,13 @@
 const apiUrl = 'https://service.eu.apiconnect.ibmcloud.com/gws/apigateway/api/2cb9e908f9c91662cbc0c1df767f4971666d45ca961903cd79032884db2f27ad/guestbook';
 const guestbook = {
   // retrieve the existing guestbook entries
-  //get() {
-  //  return $.ajax({
-  //    type: 'GET',
-  //    url: `${apiUrl}/entries`,
-  //    dataType: 'json'
-  //  });
-  //},
+  get() {
+    return $.ajax({
+      type: 'GET',
+      url: `${apiUrl}/entries`,
+      dataType: 'json'
+    });
+  },
   // add a single guestbood entry
   add(name, email, comment) {
     console.log('Sending', name, email, comment)
