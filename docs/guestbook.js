@@ -19,8 +19,8 @@ const guestbook = {
       url: `${apiUrl}/entries`,
       contentType: 'application/json; charset=utf-8',
       data: JSON.stringify({
-        new name,
-        email,
+        name,
+        new email,
         comment,
       }),
       dataType: 'json',
