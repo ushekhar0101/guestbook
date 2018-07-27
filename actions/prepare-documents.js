@@ -2,8 +2,8 @@
  * Prepare the guestbook entry to be persisted
  */
 function main(params) {
-  if (!params.name || !params.comment) {
-    return Promise.reject({error: 'no name or comment'});
+  if (!params.name || !params.comment || !params.email) {
+    return Promise.reject({error: 'Insufficient Data'});
   }
 
 	return {
