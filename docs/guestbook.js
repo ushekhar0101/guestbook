@@ -20,7 +20,7 @@ const guestbook = {
       contentType: 'application/json; charset=utf-8',
       data: JSON.stringify({
         name,
-        new email,
+        email,
         comment,
       }),
       dataType: 'json',
