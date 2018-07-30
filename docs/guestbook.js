@@ -14,13 +14,6 @@ const guestbook = {
   // add a single guestbood entry
   add(name, email, comment) {
     console.log('Sending', name, email, comment)
-    //edit us
-    guestbook.get()
-    if (email = row.doc.email){ 
-      console.log(error);
-      console.log('Email already registered');
-    }
-    else{
     return $.ajax({
       type: 'PUT',
       url: `${apiUrl}/entries`,
@@ -32,7 +25,6 @@ const guestbook = {
       }),
       dataType: 'json',
     });
-    }
   }
 };
 
